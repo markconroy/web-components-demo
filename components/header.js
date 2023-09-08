@@ -9,6 +9,7 @@ headerTemplate.innerHTML = `
       justify-content: center;
       background-color:  #0a0a23;
     }
+
     ul {
       padding: 0;
     }
