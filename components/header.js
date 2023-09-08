@@ -13,19 +13,19 @@ headerTemplate.innerHTML = `
     ul {
       padding: 0;
     }
-    
+
     ul li {
       list-style: none;
       display: inline;
     }
-    
+
     a {
       font-weight: 700;
       margin: 0 25px;
       color: #fff;
       text-decoration: none;
     }
-    
+
     a:hover {
       padding-bottom: 5px;
       box-shadow: inset 0 -2px 0 0 #fff;
@@ -34,17 +34,10 @@ headerTemplate.innerHTML = `
   <header>
     <nav>
       <ul>
-        <li><a href="about.html">Home</a></li>
-        <li><a href="about/">About</a></li>
-        <li><a href="contact.html">Building Controls</a></li>
-        <li><a href="work.html">Inspections</a></li>
-        <li><a href="work.html">Applications</a></li>
-        <li><a href="work.html">Fees and Charges</a></li>
-        <li><a href="work.html">Demolitions</a></li>
-        <li><a href="work.html">Other Services</a></li>
-        <li><a href="work.html">FAQs</a></li>
-        <li><a href="work.html">Contact us</a></li>
-        <li><a href="work.html">Accessibility</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/contact">Contact us</a></li>
       </ul>
     </nav>
   </header>

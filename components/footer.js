@@ -16,18 +16,18 @@ footerTemplate.innerHTML = `
     ul {
       padding: 0;
     }
-    
+
     ul li {
       list-style: none;
       display: inline;
     }
-    
+
     a {
       margin: 0 15px;
       color: inherit;
       text-decoration: none;
     }
-    
+
     a:hover {
       padding-bottom: 5px;
       box-shadow: inset 0 -2px 0 0 #333;
@@ -35,11 +35,11 @@ footerTemplate.innerHTML = `
   </style>
   <footer>
     <ul>
-      <li><a href="about.html"> © 2015 Surrey Heath Borough Council</a></li>
-      <li><a href="work.html">Disclaimer</a></li>
-      <li><a href="contact.html">Privary</a></li>
+      <li><a href="/"> © Web Components Demo</a></li>
+      <li><a href="/">Disclaimer</a></li>
+      <li><a href="/">Privary</a></li>
     </ul>
-    
+
   </footer>
 `;
 
