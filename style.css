@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -18,4 +18,8 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+component-paragraph p {
+  color: gold;
 }

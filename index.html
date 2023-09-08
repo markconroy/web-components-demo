@@ -8,6 +8,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="/components/header.js" type="text/javascript" defer></script>
   <script src="/components/footer.js" type="text/javascript" defer></script>
+  <script src="/components/paragraph.js" type="text/javascript" defer></script>
   <title>Web Components Demo site</title>
 </head>
 <body>
@@ -15,6 +16,17 @@
     <main>
       <h1>Web Components Demo site</h1>
       <p>This is a demo site for the Web Components Demo project.</p>
+
+      <component-paragraph>
+        <p slot="paragraph-content">Marky <a href="#">a link</a> before this.</p>
+      </component-paragraph>
+
+      <component-paragraph></component-paragraph>
+
+      <component-paragraph>
+        <p slot="paragraph-content">Conroy</p>
+      </component-paragraph>
+
     </main>
     <footer-component></footer-component>
 </body>
