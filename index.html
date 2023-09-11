@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="/components/header.js" type="text/javascript" defer></script>
   <script src="/components/footer.js" type="text/javascript" defer></script>
-  <script src="/components/paragraph.js" type="text/javascript" defer></script>
+  <script src="/components/card/card.js" type="text/javascript" defer></script>
   <title>Web Components Demo site</title>
 </head>
+
 <body>
   <header-component></header-component>
-    <main>
-      <h1>Web Components Demo site</h1>
-      <p>This is a demo site for the Web Components Demo project.</p>
 
-      <component-paragraph>
-        <p slot="paragraph-content">Marky <a href="#">a link</a> before this.</p>
-      </component-paragraph>
+  <main>
+    <h1>Web Components Demo site</h1>
+    <p>This is a demo site for the Web Components Demo project.</p>
+    <p>This is just <a href="#">a link</a> to nothing, so I can make sure component styling of links doesn't affect it.</p>
 
-      <component-paragraph></component-paragraph>
+    <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image" data-title="Title One" data-description="This card has an image, with alt text and also a title and description."></component-card>
+    <component-card data-image="/assets/images/image.jpg" data-title="Title Two" data-description="This card has an image, with no alt text, a description <a href='#'>with a link</a> to something."></component-card>
+    <component-card data-title="Title Three" data-description="This card has no image"></component-card>
+  </main>
 
-      <component-paragraph>
-        <p slot="paragraph-content">Conroy</p>
-      </component-paragraph>
-
-    </main>
-    <footer-component></footer-component>
+  <footer-component></footer-component>
 </body>
+
 </html>

@@ -19,7 +19,3 @@ body {
 main {
   flex: 1 0 auto;
 }
-
-component-paragraph p {
-  color: gold;
-}
