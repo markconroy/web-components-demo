@@ -12,6 +12,8 @@
   <script src="/components/header.js" type="text/javascript" defer></script>
   <script src="/components/footer.js" type="text/javascript" defer></script>
   <script src="/components/card/card.js" type="text/javascript" defer></script>
+  <script src="/components/card/card-list.js" type="text/javascript" defer></script>
+  <script src="/components/layouts/container.js" type="text/javascript" defer></script>
   <title>Web Components Demo site</title>
 </head>
 
@@ -21,10 +23,40 @@
   <main>
     <h1>Web Components Demo site</h1>
     <p>This is a demo site for the Web Components Demo project.</p>
-    <p>This is just <a href="#">a link</a> to nothing, so I can make sure component styling of links doesn't affect it.</p>
+    <p>This is just <a href="#">a link</a> to nothing, so I can make sure component styling of links doesn't affect it.
+    </p>
+    <h2>Containers</h2>
+    <component-container data-width="small">
+      <p>This is a container with a small width.</p>
+    </component-container>
+    <component-container data-width="medium">
+      <p>This is a container with a medium width.</p>
+    </component-container>
+    <component-container data-width="large">
+      <p>This is a container with a large width.</p>
+    </component-container>
 
-    <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image" data-title="Title One" data-description="This card has an image, with alt text and also a title and description."></component-card>
-    <component-card data-image="/assets/images/image.jpg" data-title="Title Two" data-description="This card has an image, with no alt text, a description <a href='#'>with a link</a> to something."></component-card>
+    <h2>Cards in Card List Component inside a Container Component</h2>
+    <component-container data-width="large">
+      <component-card-list>
+        <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image"
+          data-title="Title One (list)"
+          data-description="This card has an image, with alt text and also a title and description."></component-card>
+        <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image"
+          data-title="Title Two (list)"
+          data-description="This card has an image, with alt text and also a title and description."></component-card>
+        <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image"
+          data-title="Title Three (list)"
+          data-description="This card has an image, with alt text and also a title and description."></component-card>
+      </component-card-list>
+    </component-container>
+
+    <h2>Individual Cards</h2>
+    <component-card data-image="/assets/images/image.jpg" data-image-alt="alt text for this image"
+          data-title="Title One"
+          data-description="This card has an image, with alt text and also a title and description."></component-card>
+    <component-card data-image="/assets/images/image.jpg" data-title="Title Two"
+      data-description="This card has an image, with no alt text, a description <a href='#'>with a link</a> to something."></component-card>
     <component-card data-title="Title Three" data-description="This card has no image"></component-card>
   </main>
 

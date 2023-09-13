@@ -64,7 +64,7 @@ class Card extends HTMLElement {
       }
 
       a {
-        color: ;
+        color: red;
       }
     `;
 
